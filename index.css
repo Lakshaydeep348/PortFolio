@@ -1,0 +1,375 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.start
+{
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.start button
+{
+    width: 30vw;
+    height: 20vh;
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: oblique;
+    background: none;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    background-image: url(https://media3.giphy.com/media/l41lTwxu3PihM3ZOE/giphy.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    width: 92vw;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    /* display: none; */
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    /* border: 1px solid black; */
+    color: #ffffff;
+}
+
+.navBar ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+
+
+}
+
+.navBar ul li {
+    color: #000000;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 250px;
+    outline: none;
+    background-color: yellow;
+    transition: transform .3s ease-in-out;
+    text-align: center;
+}
+
+.center {
+    border: 1px solid black;
+    display: inline-block;
+    overflow: hidden;
+    object-position: center;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.homepage {
+    width: 100%;
+    min-height: 80vh;
+    /* border: 1px solid yellow; */
+    /* background: linear-gradient(to right, #ffffff, #4e4c4c); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: yellow;
+    background-blend-mode: soft-light;
+}
+
+.center1 {
+    width: 200px;
+    height: 200px;
+    /* border: 1px solid black; */
+    overflow: hidden;
+    display: inline-block;
+    background-image: url(images/lakshay.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 100px;
+    transition: transform .3s ease-in-out;
+}
+
+#myWork:hover,
+.center1:hover,
+.navBar ul li:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+}
+
+.homepage .info {
+    margin: 20px;
+    font-size: 20px;
+}
+
+.info h3 {
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: bolder;
+    font-style: oblique;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#myWork {
+    width: 30vw;
+    padding: 10px;
+    font-size: 20px;
+    margin-top: 10px;
+    border-radius: 250px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    background-color: brown;
+    color: #ffffff;
+    transition: transform .3s ease-in-out;
+    text-align: center;
+}
+
+
+
+
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    min-height: 80vh;
+    margin-bottom: 10px;
+   
+}
+.projectCenter
+{
+    margin-left: 110px;
+}
+.items 
+{
+   justify-self: center;
+    height: 70vh;
+    width: 50vw;
+    background-blend-mode: multiply;
+    position: relative;
+    overflow: hidden;
+    transition: transform .3s ease-in;
+    animation-name: example;
+    animation-duration: 15s;
+    transform: translateX(50deg);
+    animation-iteration-count: infinite;
+    transition: animation .3s ease-in-out;
+}
+@keyframes example
+ {
+    /* from {width:80%;}
+    to {width:50%;} */
+    0%{transform: rotateZ(-10deg);}
+    20%{transform: rotateZ(10deg);}
+    40%{transform: rotateZ(-10deg);}
+    60%{transform: rotateZ(10deg);}
+    80%{transform: rotateZ(-10deg);}
+    100%{transform: rotateZ(10deg);}
+
+  }
+.items:hover,p:hover
+{
+    transform: scale(1.06);
+}
+.projects p
+{
+    transition: transform .3s ease-in;
+}
+.buttons {
+    width: 50%;
+    height: 20%;
+    position: absolute;
+    bottom: 10%;
+    transform: translate(-50%, 50%);
+    background-color: yellow;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-radius: 250PX;
+}
+
+#one {
+    background-image: url(images/projects/Weather\ App.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+   
+
+}
+
+#two {
+    background-image: url(images/projects/recipie\ app.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#three {
+    background-image: url(images/projects/tic\ tac\ toe.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#four {
+    background-image: url(images/projects/video.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.explore .buttone
+{
+    width: 50%;
+    height: 20%;
+    background-color: yellow;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-radius: 250PX;
+    padding: 10px;
+    transform: translateX(+50%);
+    margin-bottom: 5vh;
+}
+
+@media screen and (max-width:1000px) {
+    .navBar {
+        justify-content: center;
+    }
+
+    .navBar .center {
+        display: none;
+    }
+
+    .right {
+        margin-left: 5px;
+    }
+
+    body {
+        min-height: 100vh;
+        width: 100vw;
+    }
+
+    .homepage {
+        height: 100vh;
+        width: 100vw;
+        padding: 0px;
+        text-align: center;
+
+    }
+
+    .info {
+        font-size: 16px;
+        padding: 0px;
+        text-align: center;
+    }
+
+    .info h3 {
+        font-size: 20px;
+    }
+
+    .container {
+        height: 100vh;
+        width: 100vw;
+        padding: 0px;
+        text-align: center;
+    }
+    .projects
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .items
+    {
+        width: 80%;
+        justify-self: center;
+        transform: rotateZ(0deg);
+    }
+    .explore .buttone
+    {
+        display: none;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .navBar {
+        display: none;
+    }
+
+    body {
+        min-height: 100vh;
+        width: 100vw;
+    }
+
+    .homepage {
+        height: 100vh;
+        width: 100vw;
+        padding: 0px;
+        border-radius: 5px;
+    }
+
+    .info {
+        font-size: 16px;
+
+        border: 1px solid yellow;
+        background-color: yellow;
+        color: #000000;
+        padding: 20px;
+    }
+
+    .info h3 {
+        font-size: 20px;
+    }
+
+    #myWork {
+
+        width: 50vw;
+    }
+
+    .container {
+        height: 100vh;
+        width: 100vw;
+        padding: 0px;
+
+    }
+    .explore .buttone
+    {
+        display: none;
+    }
+
+    .items{
+        transform: rotateZ(0deg);
+    }
+
+}
+
+
+.sticky
+{
+    position: fixed;
+   
+}
