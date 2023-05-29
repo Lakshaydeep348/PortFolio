@@ -24,10 +24,11 @@
 }
 
 
-body {
+body
+ {
     display: flex;
     justify-content: center;
-    background-image: url(https://media3.giphy.com/media/l41lTwxu3PihM3ZOE/giphy.gif);
+    background-image: url(https://i.gifer.com/76YS.gif);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -181,14 +182,12 @@ a {
 }
 @keyframes example
  {
-    /* from {width:80%;}
-    to {width:50%;} */
-    0%{transform: rotateZ(-10deg);}
-    20%{transform: rotateZ(10deg);}
-    40%{transform: rotateZ(-10deg);}
-    60%{transform: rotateZ(10deg);}
-    80%{transform: rotateZ(-10deg);}
-    100%{transform: rotateZ(10deg);}
+    0%{transform: rotateZ(-5deg);}
+    20%{transform: rotateZ(5deg);}
+    40%{transform: rotateZ(-5deg);}
+    60%{transform: rotateZ(5deg);}
+    80%{transform: rotateZ(-5deg);}
+    100%{transform: rotateZ(5deg);}
 
   }
 .items:hover,p:hover
@@ -257,7 +256,7 @@ a {
     margin-bottom: 5vh;
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1200px) {
     .navBar {
         justify-content: center;
     }
@@ -305,9 +304,8 @@ a {
     }
     .items
     {
-        width: 80%;
+        height: 30vh;
         justify-self: center;
-        transform: rotateZ(0deg);
     }
     .explore .buttone
     {
@@ -360,16 +358,52 @@ a {
     {
         display: none;
     }
+    .items
+    {
+        justify-self: center;
+        height: 30vh;
 
-    .items{
-        transform: rotateZ(0deg);
     }
-
 }
 
 
-.sticky
+.about h4,p{
+    transition: transform .3s ease-in-out;
+}
+.about h4:hover,.about p:hover
 {
-    position: fixed;
+    transform: scale(1.1);
+}
+
+.skills
+{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+table,tbody,thead,th,td
+{
+    border: 2px solid yellow;
+    border-collapse: collapse;
+}
+td,th
+{
+    width: 30vw;
+    padding: 10px;
+}
+
+#email
+{
+    text-align: center;
+    color: yellow;
    
+}
+.contact
+{
+    gap: 10px;
+}
+.contact a,h4
+{
+    font-size: 25px;
 }
