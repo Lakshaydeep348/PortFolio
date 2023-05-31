@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Lobster&family=Poppins:wght@400;700&family=Roboto:wght@100&family=Rubik+Puddles&family=Titillium+Web:ital,wght@1,200&display=swap');
+/**
+* !General styling
+**/
+
 * {
     padding: 0;
     margin: 0;
@@ -35,12 +40,19 @@ body
     background-attachment: fixed;
 }
 
+
 .container {
     width: 92vw;
     font-family: Helvetica, Arial, sans-serif;
     font-weight: bold;
     /* display: none; */
 }
+
+
+
+/**
+* !Navbar styling
+**/
 
 .navBar {
     display: flex;
@@ -80,7 +92,9 @@ body
 }
 
 
-
+/**
+* !Homepage styling
+**/
 
 
 .homepage {
@@ -154,7 +168,9 @@ a {
 }
 
 
-
+/**
+* !Projects page styling
+**/
 
 
 .projects {
@@ -165,13 +181,19 @@ a {
     margin-bottom: 10px;
    
 }
+.projects h1
+{
+    margin-top: 10px;
+    font-family: "Rubik Puddles",sans-serif;
+    font-size: 60px;
+}
 .projectCenter
 {
     margin-left: 110px;
 }
 .items 
 {
-   justify-self: center;
+    justify-self: center;
     height: 70vh;
     width: 50vw;
     background-blend-mode: multiply;
@@ -245,6 +267,48 @@ a {
     background-size: contain;
     background-repeat: no-repeat;
 }
+#five
+{
+    background-image: url(images/projects/Screenshot\ 2023-05-31\ 075020.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#six
+{
+    background-image: url(images/projects/zamato.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#seven
+{
+    background-image: url(images/projects/Responsive\ landing\ page.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#eight
+{
+    background-image: url(images/projects/bootstrap.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#nine
+{
+    background-image: url(images/projects/random\ quote\ generator.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#ten
+{
+    background-image: url(images/projects/boat.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 .explore .buttone
 {
     width: 50%;
@@ -259,6 +323,67 @@ a {
     transform: translateX(+50%);
     margin-bottom: 5vh;
 }
+
+
+
+
+/**
+* !About page styling
+**/
+
+.about h4,p{
+    transition: transform .3s ease-in-out;
+}
+.about h4:hover,.about p:hover
+{
+    transform: scale(1.1);
+}
+
+.skills
+{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+table,tbody,thead,th,td
+{
+    border: 2px solid yellow;
+    border-collapse: collapse;
+}
+td,th
+{
+    width: 30vw;
+    padding: 10px;
+}
+
+
+
+/**
+* !!Contact page styling
+**/
+
+#email
+{
+    text-align: center;
+    color: yellow;
+   
+}
+.contact
+{
+    gap: 10px;
+}
+.contact a,h4
+{
+    font-size: 25px;
+}
+
+
+
+/**
+* !Responsive styling
+**/
+
 
 @media screen and (max-width:1200px) {
     .navBar {
@@ -368,46 +493,4 @@ a {
         height: 30vh;
 
     }
-}
-
-
-.about h4,p{
-    transition: transform .3s ease-in-out;
-}
-.about h4:hover,.about p:hover
-{
-    transform: scale(1.1);
-}
-
-.skills
-{
-    margin: 20px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-table,tbody,thead,th,td
-{
-    border: 2px solid yellow;
-    border-collapse: collapse;
-}
-td,th
-{
-    width: 30vw;
-    padding: 10px;
-}
-
-#email
-{
-    text-align: center;
-    color: yellow;
-   
-}
-.contact
-{
-    gap: 10px;
-}
-.contact a,h4
-{
-    font-size: 25px;
 }
