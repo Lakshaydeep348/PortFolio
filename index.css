@@ -440,6 +440,18 @@ td,th
     {
         display: none;
     }
+    .projects h1
+    {
+        font-size: 20px;
+    }
+    .projects p
+    {
+        padding: 10px;
+    }
+    .buttons
+    {
+        font-size:10px;
+    }
 }
 
 @media screen and (max-width:600px) {
@@ -492,5 +504,9 @@ td,th
         justify-self: center;
         height: 30vh;
 
+    }
+    .projects h1
+    {
+        font-size: 20px;
     }
 }
