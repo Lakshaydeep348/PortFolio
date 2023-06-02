@@ -31,6 +31,7 @@
 
 body
  {
+    /* overflow-x: hidden; */
     display: flex;
     justify-content: center;
     background-image: url(https://i.gifer.com/76YS.gif);
@@ -42,12 +43,11 @@ body
 
 
 .container {
-    width: 90vw;
+    width: 100vw;
     font-family: Helvetica, Arial, sans-serif;
     font-weight: bold;
     /* display: none; */
 }
-
 
 
 /**
@@ -61,14 +61,14 @@ body
     align-items: center;
     /* border: 1px solid black; */
     color: #ffffff;
+    
+    
 }
 
 .navBar ul {
     list-style: none;
     display: flex;
     gap: 10px;
-
-
 }
 
 .navBar ul li {
@@ -100,7 +100,7 @@ body
 .homepage {
     width: 100%;
     min-height: 80vh;
-    /* border: 1px solid yellow; */
+   
     /* background: linear-gradient(to right, #ffffff, #4e4c4c); */
     display: flex;
     justify-content: center;
@@ -152,7 +152,8 @@ a {
     font-weight: bold;
 }
 
-#myWork {
+#myWork 
+{
     width: 30vw;
     padding: 10px;
     font-size: 20px;
@@ -194,8 +195,8 @@ a {
 .items 
 {
     justify-self: center;
-    height: 70vh;
-    width: 50vw;
+     height: 70vh;
+    width: 80vw;
     background-blend-mode: multiply;
     position: relative;
     overflow: hidden;
@@ -205,6 +206,13 @@ a {
     transform: translateX(50deg);
     animation-iteration-count: infinite;
     transition: animation .3s ease-in-out;
+   
+}
+.para
+{
+  height:10vh;
+  border: none;
+   
 }
 @keyframes example
  {
@@ -243,8 +251,6 @@ a {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-   
-
 }
 
 #two {
@@ -309,10 +315,30 @@ a {
     background-size: contain;
     background-repeat: no-repeat;
 }
+#eleven
+{
+    background-image: url(images/projects/age\ calculator.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#twelve
+{
+    background-image: url(images/projects/bg\ changer.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.explore
+{
+    display: flex;
+    justify-content: center;
+}
 .explore .buttone
 {
-    width: 50%;
-    height: 20%;
+    margin-top: 20px;
+    width: 100%;
+    min-height: 20%;
     background-color: yellow;
     font-weight: bold;
     font-size: 20px;
@@ -320,7 +346,6 @@ a {
     outline: none;
     border-radius: 250PX;
     padding: 10px;
-    transform: translateX(+50%);
     margin-bottom: 5vh;
 }
 
@@ -330,7 +355,10 @@ a {
 /**
 * !About page styling
 **/
-
+.about
+{
+    margin-top: 30vh;
+}
 .about h4,p{
     transition: transform .3s ease-in-out;
 }
@@ -377,7 +405,42 @@ td,th
 {
     font-size: 25px;
 }
-
+.container
+{
+    position: relative;
+}
+.hamburger
+{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(211, 211, 39);
+    display: none;
+}
+.hamburger a
+{
+    color: black;
+    padding: 5px;
+}
+.hamburger ul
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap:10px;
+}
+.hamburger ul li
+{
+    list-style: none;
+    background-color: yellow;
+    width: 70vw;
+    border-radius: 250px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.9);
+}
 
 
 /**
@@ -389,7 +452,10 @@ td,th
     .navBar {
         justify-content: center;
     }
-
+    #myWork
+    {
+      width: 80vw;
+    }
     .navBar .center {
         display: none;
     }
@@ -433,7 +499,8 @@ td,th
     }
     .items
     {
-        height: 30vh;
+        width: 80vw;
+        height: 50vh;
         justify-self: center;
     }
     .explore .buttone
@@ -447,66 +514,43 @@ td,th
     .projects p
     {
         padding: 10px;
+        font-size: 16PX;
     }
     .buttons
     {
         font-size:10px;
     }
+  
+
 }
-
-@media screen and (max-width:600px) {
-    .navBar {
+.last
+{
+    display: none;
+}
+@media screen and (max-width:400px) {
+    .navBar{
         display: none;
     }
-
-    body {
-        min-height: 100vh;
+    .last
+    {
+        display: block;
         width: 100vw;
+
     }
-
-    .homepage {
-        height: 100vh;
-        width: 100vw;
-        padding: 0px;
-        border-radius: 5px;
-    }
-
-    .info {
-        font-size: 16px;
-
-        border: 1px solid yellow;
+    .last button{
+        width: 100%;
+        height: 5vh;
+        border: none;
         background-color: yellow;
-        color: #000000;
-        padding: 20px;
-    }
-
-    .info h3 {
         font-size: 20px;
+        border-radius: 250px;
     }
-
-    #myWork {
-
-        width: 50vw;
-    }
-
-    .container {
-        height: 100vh;
-        width: 100vw;
-        padding: 0px;
-
-    }
-    .explore .buttone
+    .hamburger
     {
         display: none;
     }
-    .items
+    #myWork
     {
-        justify-self: center;
-        height: 30vh;
-
-    }
-    .projects h1
-    {
-        font-size: 20px;
+        width: 80vw;
     }
 }
